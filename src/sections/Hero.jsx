@@ -23,7 +23,7 @@ export function Hero() {
     <section id="home" className="hero" aria-labelledby="hero-title">
       <div className="hero__video" aria-hidden="true">
         <video ref={videoRef} id="heroVideo" autoPlay muted playsInline preload="metadata" poster="/assets/hero-core.jpg">
-          <source src="/assets/cinematic-hero.webm" type="video/webm"/>
+          <source src="/public/assets/cinematic-hero.webm" type="video/webm"/>
         </video>
       </div>
       <div className="hero__overlay" aria-hidden="true"/>
