@@ -1,0 +1,52 @@
+:root {
+  --bg: #030305;
+  --bg-raised: #08080d;
+  --bg-soft: #0d0d13;
+  --surface: rgba(255,255,255,.035);
+  --surface-hover: rgba(255,255,255,.06);
+  --glass: rgba(10,10,15,.68);
+  --text: #fff;
+  --text-secondary: #b9b8c2;
+  --text-muted: #777783;
+  --border: rgba(255,255,255,.09);
+  --border-strong: rgba(255,255,255,.18);
+  --purple: #8a63f8;
+  --purple-strong: #6b4cef;
+  --blue: #5a8cff;
+  --green: #00e880;
+  --amber: #d6ad63;
+  --gradient: linear-gradient(135deg,#8a63f8,#5c43fa);
+  --gradient-text: linear-gradient(90deg,#a98dff,#67a0ff);
+  --shadow: 0 2rem 6rem rgba(0,0,0,.34);
+  --font-display: 'Outfit','Avenir Next','Segoe UI',sans-serif;
+  --font-body: 'Inter','Segoe UI',sans-serif;
+  --font-fa: 'Vazirmatn','Noto Sans Arabic',Tahoma,sans-serif;
+  --ease: cubic-bezier(.16,1,.3,1);
+  --container: min(90vw,1320px);
+  --section-space: clamp(6rem,10vw,10rem);
+  --pointer-x: 50vw;
+  --pointer-y: 25vh;
+  --hero-parallax: 0px;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f2f1ee;
+  --bg-raised: #faf9f6;
+  --bg-soft: #e9e8e4;
+  --surface: rgba(16,16,24,.035);
+  --surface-hover: rgba(16,16,24,.065);
+  --glass: rgba(248,247,244,.82);
+  --text: #111116;
+  --text-secondary: #4f4e59;
+  --text-muted: #77757f;
+  --border: rgba(15,15,22,.11);
+  --border-strong: rgba(15,15,22,.2);
+  --purple: #6947dc;
+  --purple-strong: #5634cf;
+  --blue: #316fdf;
+  --green: #009c58;
+  --gradient: linear-gradient(135deg,#7855e8,#4d72e6);
+  --gradient-text: linear-gradient(90deg,#6542d8,#286fd3);
+  --shadow: 0 2rem 6rem rgba(24,20,45,.12);
+}
