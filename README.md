@@ -41,7 +41,15 @@ npm run preview
 - CV-based technical and language skills
 - Clearly qualified cybersecurity learning direction
 - Harmless simulated terminal; no system commands are executed
-- Locally stored 1.5 MB cinematic hero video with poster fallback
+- Brighter locally stored cinematic Hero video with poster fallback
+- Two lightweight, locally hosted ambient films for the Expertise and Security sections; playback pauses outside the viewport and respects reduced-motion preferences
+
+## Ambient media credits
+
+- Server-room footage: [MrColo on Pexels](https://www.pexels.com/video/close-up-of-a-cpu-7140928/)
+- Circuit-flow animation: [Oleg Gamulinskii on Pexels](https://www.pexels.com/video/a-circuit-board-with-blue-lines-on-it-6466100/)
+
+Both clips are distributed under the Pexels license, stored locally, muted, stripped of audio, and optimized to 720p WebM for GitHub Pages.
 
 ## Content architecture
 

@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { labels, portfolio, text } from '../data/portfolio'
+import { labels, portfolio, publicUrl, text } from '../data/portfolio'
 import { useSitePreferences } from '../context/SitePreferences'
 import { SectionHeader } from '../components/SectionHeader'
+import { SectionFilm } from '../components/SectionFilm'
 import { Icon } from '../components/Icon'
 
 export function Expertise() {
@@ -9,7 +10,12 @@ export function Expertise() {
   const copy = labels[language]
   const [open, setOpen] = useState(0)
   return (
-    <section id="expertise" className="section expertise" aria-labelledby="expertise-title">
+    <section id="expertise" className="section expertise cinematic-section" aria-labelledby="expertise-title">
+      <SectionFilm
+        src={publicUrl('assets/circuit-flow.webm')}
+        poster={publicUrl('assets/circuit-flow-poster.jpg')}
+        tone="circuit"
+      />
       <div className="container">
         <SectionHeader kicker={copy.expertiseKicker} title={copy.expertiseTitle} intro={copy.expertiseIntro} id="expertise-title"/>
         <div className="expertise-list" data-reveal="up">
