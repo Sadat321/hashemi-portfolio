@@ -1,5 +1,10 @@
 const bi = (en, fa) => ({ en, fa })
 
+// Vite replaces BASE_URL with /hashemi-portfolio/ in the GitHub Pages build.
+// Keeping public-file URLs behind this helper prevents requests from incorrectly
+// going to https://sadat321.github.io/assets/... at the domain root.
+export const publicUrl = (path) => `${import.meta.env.BASE_URL}${String(path).replace(/^\/+/, '')}`
+
 export const labels = {
   en: {
     nav: { about: 'About', expertise: 'Expertise', projects: 'Projects', experience: 'Experience', education: 'Education', security: 'Security', contact: 'Contact' },
@@ -111,8 +116,8 @@ export const portfolio = {
     phone: '+93773298456',
     phoneDisplay: '+93 773 298 456',
     whatsapp: 'https://wa.me/93773298456',
-    resumeUrl: '/documents/Sayed-Masbah-Hashimi-CV.pdf',
-    portrait: '/assets/sayed-masbah-hashimi.webp',
+    resumeUrl: publicUrl('documents/Sayed-Masbah-Hashimi-CV.pdf'),
+    portrait: publicUrl('assets/sayed-masbah-hashimi.webp'),
   },
 
   nav: [
@@ -183,7 +188,7 @@ export const portfolio = {
       category: bi('Web services portfolio', 'پورتفولیوی خدمات وب'),
       year: bi('1402 · 2023/24', '۱۴۰۲'),
       url: 'https://hashimi-web.github.io/HWD/',
-      image: '/assets/hashimi-web-screenshot.webp',
+      image: publicUrl('assets/hashimi-web-screenshot.webp'),
       alt: bi('Hashemi Web Development website homepage screenshot', 'تصویر صفحه اصلی وب‌سایت توسعه وب هاشمی'),
       summary: bi(
         'A service-focused portfolio presenting web design packages, capabilities, recent projects, and direct contact options.',
@@ -211,7 +216,7 @@ export const portfolio = {
       category: bi('Cargo company website', 'وب‌سایت شرکت کارگو'),
       year: bi('1403 · 2024/25', '۱۴۰۳'),
       url: 'https://blueship-cargo.github.io/Bluship-Cargo/',
-      image: '/assets/blueship-cargo-screenshot.webp',
+      image: publicUrl('assets/blueship-cargo-screenshot.webp'),
       alt: bi('Blue Ship Cargo company website homepage screenshot', 'تصویر صفحه اصلی وب‌سایت شرکت بلوشیپ کارگو'),
       summary: bi(
         'A public information website for cargo services, service coverage, workflow imagery, branches, and customer contact.',
@@ -322,7 +327,7 @@ export const portfolio = {
   ],
 
   meta: {
-    siteUrl: 'https://hashimi-web.github.io/cinematic-portfolio/',
+    siteUrl: 'https://sadat321.github.io/hashemi-portfolio/',
     year: 2026,
   },
 }

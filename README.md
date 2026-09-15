@@ -83,12 +83,13 @@ public/
 
 Content was transcribed from the supplied CV and verified against the two public websites. The portfolio does not claim professional cybersecurity certification or unsupported expertise. Date of birth and exact residential address were intentionally omitted from the public interface; they remain inside the user-supplied downloadable CV.
 
-## Before deployment
+## GitHub Pages deployment
 
-The canonical and Open Graph URLs currently target:
+This project is configured for the repository and public URL below:
 
 ```text
-https://hashimi-web.github.io/cinematic-portfolio/
+Repository: Sadat321/hashemi-portfolio
+Website:    https://sadat321.github.io/hashemi-portfolio/
 ```
 
-If the final repository or domain differs, update `index.html`, `public/robots.txt`, `public/sitemap.xml`, and `portfolio.meta.siteUrl`.
+The Vite base path and every local image, video, and document URL include the repository path. Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and deploys `dist` automatically through GitHub Actions.

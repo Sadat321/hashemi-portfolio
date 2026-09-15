@@ -1,7 +1,8 @@
 {
   "name": "Sayed Masbah Hashimi — Technology Portfolio",
   "short_name": "SMH Portfolio",
-  "start_url": "/",
+  "start_url": "/hashemi-portfolio/",
+  "scope": "/hashemi-portfolio/",
   "display": "standalone",
   "background_color": "#030305",
   "theme_color": "#030305",

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { labels, portfolio, text } from '../data/portfolio'
+import { labels, portfolio, publicUrl, text } from '../data/portfolio'
 import { useSitePreferences } from '../context/SitePreferences'
 import { Button } from '../components/Button'
 import { Icon } from '../components/Icon'
@@ -22,8 +22,8 @@ export function Hero() {
   return (
     <section id="home" className="hero" aria-labelledby="hero-title">
       <div className="hero__video" aria-hidden="true">
-        <video ref={videoRef} id="heroVideo" autoPlay muted playsInline preload="metadata" poster="/assets/hero-core.jpg">
-          <source src="/public/assets/cinematic-hero.webm" type="video/webm"/>
+        <video ref={videoRef} id="heroVideo" autoPlay muted playsInline preload="metadata" poster={publicUrl('assets/hero-core.jpg')}>
+          <source src={publicUrl('assets/cinematic-hero.webm')} type="video/webm"/>
         </video>
       </div>
       <div className="hero__overlay" aria-hidden="true"/>
